@@ -1,0 +1,86 @@
+body {
+  font-family: 'Plus Jakarta Sans', 'Tajawal', sans-serif;
+}
+
+.nav {
+  width: 100%;
+  background-color: #37474f;
+  color: #ffffff;
+  overflow: auto;
+  margin-bottom: 20px;
+  border-radius: 0;
+}
+.nav_link {
+  float: left;
+  width: auto;
+  padding: 20px;
+  transition: all 0.3s ease;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav_link-menu {
+  display: none;
+  float: right;
+}
+
+.h1 {
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+  .h1 {
+    font-size: 28px;
+    line-height: 37px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav_link {
+    display: none;
+  }
+  .nav_link-home {
+    display: block;
+  }
+
+  .nav_search {
+    max-width: 130px;
+  }
+
+  .nav_link-menu {
+    display: block;
+    background-color: #37474f;
+    border: none;
+  }
+
+  .nav-mobile {
+    margin-top: 63px;
+  }
+  .nav-mobile_link {
+    display: block;
+    color: #ffffff;
+    width: auto;
+    padding: 20px;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  .nav-mobile_link:hover,
+  .nav-mobile_link:focus,
+  .nav-mobile_link.active {
+    background: #000000;
+  }
+
+  .h1 {
+    font-size: 28px;
+    font-weight: 200;
+    line-height: 32px;
+  }
+}
+
+.h1,
+.nav h1 {
+  margin: 0;
+}

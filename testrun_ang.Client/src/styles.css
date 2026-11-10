@@ -1,0 +1,247 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', 'Tajawal', sans-serif;
+  background: #ffffff;
+  margin: 0;
+}
+
+/*container wrapper*/
+.container {
+  display: block;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 20px;
+}
+
+.container.fullwidth {
+  margin: 30px 10px 0 10px;
+  width: auto;
+  display: block;
+}
+
+/*banners*/
+.container_banner {
+  display: block;
+  position: relative;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  width: calc(100% - 40px);
+
+  display: none;
+}
+.container_banner-error {
+  background: #f44336;
+  border: 2px solid #f44336;
+  color: #ffffff;
+}
+
+.container_banner-success {
+  background: #4caf50;
+  border: 2px solid #4caf50;
+  color: #ffffff;
+}
+
+/*text types*/
+.h2 {
+  font-size: 28px;
+  font-weight: 200;
+  line-height: 32px;
+}
+.h3 {
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 28px;
+}
+
+.container_banner > .h2 {
+  margin-top: 0;
+}
+
+/*form*/
+.container_form {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background: #ffffff;
+  outline: none;
+  overflow: hidden;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+  margin: 0;
+}
+/*basic input code*/
+.container_form_label,
+.container_form_input,
+.container_form_select,
+.container_form_submit {
+  display: block;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 200;
+}
+
+.container_form_label {
+  margin-bottom: 5px;
+}
+.container_form_label-ib {
+  display: inline-block;
+}
+
+.container_form_input {
+  border: 1px solid #ced4da;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+.container_form_input:focus {
+  border: 1px solid #0b5ed7;
+}
+
+.container_form_submit {
+  background-color: #64b5f6;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 5px;
+  border: 2px solid #64b5f6;
+}
+.container_form_submit:hover {
+  background-color: #0b5ed7;
+  border: 2px solid #0b5ed7;
+  outline: 2px solid #000000;
+}
+.container_form_submit:focus {
+  outline: 2px solid #000000;
+}
+
+.required {
+  color: #f44336;
+}
+
+/*buttons*/
+.btn {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 200;
+  border-radius: 5px;
+  color: #000000;
+  padding: 5px;
+  background-color: #e7e7e7;
+  border: 2px solid #e7e7e7;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.btn:hover {
+  background-color: #777777;
+  border: 2px solid #777777;
+  outline: 2px solid #000000;
+}
+.btn:focus {
+  outline: 2px solid #000000;
+}
+
+.btn-info {
+  background-color: #64b5f6;
+  border: 2px solid #64b5f6;
+  color: #ffffff;
+}
+.btn-info:hover {
+  background-color: #0b5ed7;
+  border: 2px solid #0b5ed7;
+  outline: 2px solid #000000;
+}
+.btn-info:focus {
+  outline: 2px solid #000000;
+}
+
+/*basic positioning styles*/
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+  .h1 {
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .container_form_label,
+  .container_form_input,
+  .container_form_submit,
+  .container_form_select {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    margin: 20px;
+  }
+  .container-fullwidth {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .container_banner {
+    max-width: 100%;
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+
+  .h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    margin: 0;
+  }
+  .container {
+    margin: 10px;
+    margin-bottom: 40px;
+  }
+
+  .container_form {
+    max-width: 100%;
+    width: calc(100% - 20px);
+    padding: 0;
+  }
+
+  .h2 {
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 28px;
+  }
+
+  .h3 {
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 26px;
+  }
+
+  .container_form_label,
+  .container_form_input,
+  .container_form_submit,
+  .container_form_select {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

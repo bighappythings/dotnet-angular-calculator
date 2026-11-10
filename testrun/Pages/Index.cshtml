@@ -1,0 +1,50 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+
+    <!--error state-->
+    <div class="container_banner container_banner-error">
+        <h2 class="h2"><span aria-hidden="true">⚑</span> Error <span class="close" aria-label="close" onclick="this.parentElement.parentElement.style.display='none';">✖</span></h2>
+        <p class="p">Something terrible has occured!</p>
+    </div>
+
+    <button class="btn">Use Calculator</button>
+
+    <div class="">
+        <form class="" method="post">
+            <div class="form-group mb-2">
+                <label for="number1" class="control-label">First number</label>
+                <input id="number1" type="text" class="form-check-control" />
+
+                <label for="sumtype" class="control-label">Sum type</label>
+                <select id="sumtype" class="form-select mb-3">
+                    <option class="" selected>Add</option>
+                    <option class="">Subtract</option>
+                </select>
+
+
+                <label for="number2" class="control-label">Second number</label>
+                <input id="number2" type="text" class="form-check-control" />
+            </div>
+
+            <div class="form-group mt-2">
+                <input type="submit" value="Calculate" class="btn btn-primary" />
+            </div>
+        </form>
+
+        <!--result-->
+        <div class="container_banner container_banner-success">
+            <h2 class="h2">
+                <span aria-hidden="true">⚑</span> Result
+            </h2>
+            <p class="p">Something wonderful has occured!</p>
+        </div>
+
+
+       
+    </div>
+</div>

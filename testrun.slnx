@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="testrun.test/testrun.test.csproj" Id="fea01d45-f0fc-42a7-af7b-8d5e2f863cce" />
+  <Project Path="testrun/testrun.csproj" />
+</Solution>

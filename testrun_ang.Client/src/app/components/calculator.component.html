@@ -1,0 +1,50 @@
+ <div class="">
+    <form class="container_form" (ngSubmit)="runCalculation()">
+        <div class="form-group mb-2">
+            <label for="number1" class="container_form_label">First number</label>
+            <input 
+                id="number1" 
+                type="number" 
+                class="container_form_input"
+                [(ngModel)]="firstNumber"
+                name="firstNumber" />
+
+            <label for="operation" class="container_form_label">Sum type</label>
+            <select 
+                id="operation" 
+                class="container_form_select"
+                [(ngModel)]="operation"
+                name="operation">
+                <option value="add" class="" selected>Add</option>
+                <option value="subtract" class="">Subtract</option>
+            </select>
+
+
+            <label for="number2" class="container_form_label">Second number</label>
+            <input 
+                id="number2" 
+                type="number"
+                class="container_form_input" 
+                [(ngModel)]="secondNumber"
+                name="secondNumber"/>
+        </div>
+
+        <div class="form-group mt-2">
+            <button class="btn btn-success" type="submit">
+                Calculate
+            </button>
+            
+            <!--<p>Debug: {{ firstNumber + secondNumber }}</p>-->
+        </div>
+    </form>
+
+    <!--result-->
+    @if (showModal){
+        <div class="modal">
+            <h2 class="h2">The result is: <strong>{{ result ?? 'No result yet' }}</strong></h2>
+            <button class="btn btn-info" (click)="closeModal()">Close</button>
+        </div>
+    }
+    
+</div>
+

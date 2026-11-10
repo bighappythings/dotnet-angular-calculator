@@ -1,0 +1,25 @@
+# Visual Studio
+.vs/
+bin/
+obj/
+
+# Angular
+node_modules/
+dist/
+
+# Certificates
+*.pfx
+*.pem
+*.crt
+*.key
+
+# Environment files
+.env
+.env.*
+
+# User settings
+*.user
+*.suo
+
+# Logs
+*.log
